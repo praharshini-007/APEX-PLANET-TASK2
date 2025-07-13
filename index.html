@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intermediate Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Task-02 To-Do List</h1>
+      <ul>
+        <li class="contact"><a href="#form">Contact</a></li>
+        <li><a href="#todo">To-Do</a></li>
+         <li><a href="#todo">Goal</a></li>
+          <li><a href="" target="_blank">settings</a></li>  
+
+
+      </ul>
+
+     
+    </nav>
+    
+        
+    
+  </header>
+
+  <main class="grid-container">
+    <section class="form-section" id="form">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <section class="todo-section" id="todo">
+      <h2>My To-Do List</h2>
+      <div class="todo-controls">
+        <input type="text" id="taskInput" placeholder="Add new task..." />
+        <select id="priorityInput">
+  <option value="sunday">Sunday</option>
+  <option value="monday">Monday</option>
+  <option value="tuesday">Tuesday</option>
+  <option value="wednesday">Wednesday</option>
+  <option value="thursday">Thursday</option>
+  <option value="friday">Friday</option>
+  <option value="saturday">Saturday</option>
+</select>
+        <button onclick="addTask()" class="btn">Add</button>
+        <button onclick="clearTasks()" class="btn btn-clear" type="button">Clear All</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; task-02 apex planent web devlopment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
